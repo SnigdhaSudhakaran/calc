@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcu</title>
+    <link rel="stylesheet" href="calc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="calculator">
+    <h2>CASIO</h2>
+    <div id="input">
+        <input type="text" id="output" placeholder="0">
+        <label for="output"></label> <br>
+        <br>
+    <div class="buttons">
+    <div>
+        <input onclick="clearAll()" id="clear" class="btn" type="button" value="CL" style="background-color: red; color: white;">
+        <input onclick="removeLast()" id="delete" class="btn" type="button" value="DEL" style="background-color: red; color: white; margin-left: 30px;">
+        <input onclick="display('%')" id="percentage" class="btn" type="button" value="%" style="background-color: black; color: white; margin-left: 30px;">
+        <input onclick="display('/')" id="divide" class="btn" type="button" value="/" style="background-color: black; color: white; margin-left: 30px;">
+    </div><br>
+
+    <div>
+    <input onclick="display(7)" id="seven" type="button" value="7">
+    <input onclick="display(8)" id="eight" type="button" value="8" style="margin-left: 30px;">
+    <input onclick="display(9)" id="nine" type="button" value="9" style="margin-left: 30px;">
+    <input onclick="display('*')" id="multiply" type="button" value="*" style="background-color: black; margin-left: 30px;">
+    </div><br>
+
+    <div>
+        <input onclick="display(4)" id="four" type="button" value="4">
+        <input onclick="display(5)" id="five" type="button" value="5" style="margin-left: 30px;">
+        <input onclick="display(6)" id="six" type="button" value="6" style="margin-left: 30px;">
+        <input onclick="display('-')" id="minus" type="button" value="-" style="background-color: black; margin-left: 30px;">
+    </div><br>
+
+   <div>
+ <input onclick="display(1)" id="one" type="button" value="1">
+ <input onclick="display(2)" id="two" type="button" value="2" style="margin-left: 30px;">
+ <input onclick="display(3)" id="three" type="button" value="3" style="margin-left: 30px;">
+ <input onclick="display('+')" id="plus" type="button" value="+" style="background-color: black; margin-left: 30px;">
+    </div><br>
+
+    <div>
+        <input onclick="display('00')" id="doublezero" type="button" value="00">
+        <input onclick="display(0)" id="zero" type="button" value="0" style="margin-left: 30px;">
+        <input onclick="display('.')" type="button" value="." style="margin-left: 30px;">
+        <input onclick="evaluateExp()" id="equal" type="button" value="=" style="background-color: darkgreen; margin-left: 30px;">
+</div>
+        </div>
+    </div>
+    </div> 
+</body>
+<script src="./cal.js"></script>
+</html>
+
+
